@@ -46,7 +46,7 @@ func hitURL(url string, c chan<- requestResult) {
 	resp, err := http.Get(url)
 	status := "OK"
 	if err != nil || resp.StatusCode >= 400 {
-		status = "FAILED"
+		status = "FAILED!"
 	}
 	c <- requestResult{url: url, status: status}
 }
