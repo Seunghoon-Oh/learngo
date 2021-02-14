@@ -1,11 +1,11 @@
 package main
 
 import (
+	"learngo/scrapper"
 	"os"
 	"strings"
 
 	"github.com/labstack/echo"
-	"github.com/serranoarevalo/learngo/scrapper"
 )
 
 const fileName string = "jobs.csv"
